@@ -2,20 +2,15 @@
 Assignment #2
 
 1. Add / modify code ONLY between the marked areas (i.e. "Place code below")
-2. Run the associated test harness for a basic check on completeness. A successful run of the test cases does not 
-    guarantee accuracy or fulfillment of the requirements. Please do not submit your work if test cases fail.
+2. Run the associated test harness for a basic check on completeness. A successful run of the test cases does not guarantee accuracy or fulfillment of the requirements. Please do not submit your work if test cases fail.
 3. To run unit tests simply use the below command after filling in all of the code:
-    python 07_assignment.py
+    python 01_assignment.py
   
 4. Unless explicitly stated, please do not import any additional libraries but feel free to use built-in Python packages
 5. Submissions must be a Python file and not a notebook file (i.e *.ipynb)
-6. Do not use global variables unless stated to do so
-7. Make sure your work is committed to your master branch in Github
+6. Do not use global variables
+7. Make sure your work is committed to your master branch
 
-
-Installation requirements:
-
-1. Please install numpy: pip install numpy
 
 '''
 import math
@@ -46,10 +41,7 @@ def exercise02():
 
 
 def exercise03():
-    # Programmatically reorganize the countdown list below in descending order and return the value of the 5th element in the sorted countdown list.
-    # The 5th element will be stored in the variable the_fifth_element, which currently below has a dummy value of -999.
-    # Remember, the index number of the 5th element is not 5
-    
+    # Reorganize the countdown list below in descending order and return the value of the 5th element in the sorted countdown list
     countdown = [9, 8, 7, 5, 4, 2, 1, 6, 10, 3, 0, -5]
     the_fifth_element = -999
 
@@ -115,23 +107,23 @@ def exercise07(n):
 
 # Exercise 8
 # Create a function called display_menu that receives an argument called menu. The function should do the following:
-# 1. Verify that menu is in fact a tuple. If it isnt, return back -1. Remember that a function can return more than one value and -1 is just one of those values. Not all return values need to be meaningful in all cases.
-# 2. Determine the number of elements in the menu tuple
-# 3. Loops through menu & enumerate through the a menu to the screen. The test case will describe what the menu items are. The enumeration should be generate by code and not hardcoded.
+# 1. Verify that menu is in fact a tuple. If it isnt, return back -1.
+# 2. Determine the number of elements in menu
+# 3. Loops through menu & enumerate through to the a menu to the screen. The test case will describe what the menu items are. The enumeration should be generate by code and not hardcoded.
 # 4. Using input(), asks the user to select a menu item by entering a number and hitting Enter 
 # 5. Validates if the number entered is a valid menu option and asks user to retry if number is not valid or is not a number / int
-# 6. An EXIT menu option should be added at the end of the displayed list of menu options allowing the user to exit selecting a menu causing the display_menu() function to return back the number of the last menu option chosen prior to exit and also return the length of menu (the display_menu() function returns two values)
-# 7. The menu options should repeatedly display after each selection until user selects EXIT
+# 6. An exit menu option should be added at the end of the displayed list of menu options allowing the user to exit selecting a menu causing the display_menu() function to return back the number of the last menu option chosen prior to exit and also return the length of menu
+# 7. If a valid menu option is chosen, call a function named similarly to the menu option that prints the menu option chosen i.e. def buy_burger() prints('Burger bought!')
+# 8. The menu options should repeatedly be displayed after each selection (and appropriate delegate function is called) until user selects exist
 
 # ------ Place code below here \/ \/ \/ ------
 
-def display_menu():
-    pass
+
 
 # ------ Place code above here /\ /\ /\ ------
 
 def exercise09():
-    # Compile a list of 10 random URLs of dog pics. You will simply populate the dogs list with URLs of pics.
+    # Compile a list of 10 random URLs of dog pics
 
     dogs = []
     url = 'https://random.dog/woof.json'
